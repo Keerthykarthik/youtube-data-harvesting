@@ -21,14 +21,11 @@ Features that are added in this applications:
     5.Ability to search and retrieve data from the SQL database using different search options, including joining tables to get channel details.
 
 To accomplish this,several packages are utilized:
+
      Google apiclient.discovery: This package allows interaction with the youtube data API,enabling the retrieval of video-related data.
-     
      Streamlit: Streamlit is employed as the web application framework for this project.It provides user-friendly interface for easy interaction with the application.
-     
      Psycopg2: This package is utilized to establish a connection and perform operations on a PostgreSQL database.It facilitates the migration of data from MongoDB to PostgreSQL for subsequent analysis.
-     
      Pandas: The pandas package is used for data manipulation and analysis.It aids in organizing and structuring the collected data in a convenient format.
-     
      Pymongo: This package is employed to interact with MongoDB, a NOSQL database.It enables the storage of unstructured data extracted from youtube.
 
 Approach of this project:
