@@ -145,7 +145,7 @@ def get_playlist_details(channel_id):
 
 #Upload to MongoDB
 
-client=pymongo.MongoClient("mongodb+srv://keerthymohan45:4595@cluster0.zxf79bz.mongodb.net/?retryWrites=true&w=majority")
+client=pymongo.MongoClient("mongodb+srv://keerthymohan45:<password>@cluster0.zxf79bz.mongodb.net/?retryWrites=true&w=majority")
 db=client["Utube_data_harvest"]
 
 def channel_details(channel_id):
@@ -166,7 +166,7 @@ def channel_details(channel_id):
 def channels_table():
     mydb=psycopg2.connect(host="localhost",
                             user="postgres",
-                            password="4595",
+                            password="<password>",
                             database="youtube_Data_harvest",
                             port="5432")
     cursor=mydb.cursor()
@@ -226,7 +226,7 @@ def channels_table():
 def playlist_table():
         mydb=psycopg2.connect(host="localhost",
                 user="postgres",
-                password="4595",
+                password="<password>",
                 database="youtube_Data_harvest",
                 port="5432")
         cursor=mydb.cursor()
@@ -285,7 +285,7 @@ def playlist_table():
 def videos_table():
         mydb=psycopg2.connect(host="localhost",
                               user="postgres",
-                              password="4595",
+                              password="<password>",
                               database="youtube_Data_harvest",
                               port="5432")
         cursor=mydb.cursor()
@@ -371,7 +371,7 @@ def videos_table():
 def comment_table():
         mydb=psycopg2.connect(host="localhost",
                             user="postgres",
-                            password="4595",
+                            password="<password>",
                             database="youtube_Data_harvest",
                             port="5432")
         cursor=mydb.cursor()
@@ -529,7 +529,7 @@ elif show_table=="COMMENTS":
 
 mydb=psycopg2.connect(host="localhost",
                             user="postgres",
-                            password="4595",
+                            password="<password>",
                             database="youtube_Data_harvest",
                             port="5432")
 cursor=mydb.cursor()
