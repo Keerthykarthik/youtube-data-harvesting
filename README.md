@@ -18,6 +18,16 @@ Features that are added in this applications:
     3.Ability to collect data for up to 10 different YouTube channels and store them in the data lake by clicking a button.
     4.Provide Option to select a channel name and migrate its data from the data lake to a SQL database as tables.
     5.Ability to search and retrieve data from the SQL database using different search options, including joining tables to get channel details.
+To accomplish this, several packages are utilized:
+    Google apiclient.discovery: This package allows interaction with the YouTube Data API, enabling the retrieval of video-related data.
+
+    Streamlit: Streamlit is employed as the web application framework for this project. It provides an intuitive and user-friendly interface for easy interaction with the application.
+
+    psycopg2: This package is utilized to establish a connection and perform operations on a PostgreSQL database. It facilitates the migration of data from MongoDB to PostgreSQL for subsequent analysis.
+
+    pandas: The pandas package is used for data manipulation and analysis. It aids in organizing and structuring the collected data in a convenient format.
+
+    pymongo: This package is employed to interact with MongoDB, a NoSQL database. It enables the storage of unstructured data extracted from YouTube.
 
 Approach of this project:
     I used VS code platform for python code in virtual environments in that I want to installed some packages like google-api-python-client,pymongo,psycopg2(postgresql),pandas and streamlit for building this application.
